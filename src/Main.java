@@ -22,11 +22,18 @@ System.out.println("------------------------------------");
         System.out.println("---------------------------------------");
 
         //Задание №3
-    int CurrentYear = 2122;
+    int CurrentYear = 2055;
         System.out.print("Last years of Halley Comet were: ");
     for (int CometYear = 0; CometYear <= CurrentYear + 100; CometYear += 79) {
-        if (CometYear >= CurrentYear - 200 && CometYear < CurrentYear) {System.out.print(CometYear+"; ");}
-        if (CometYear > CurrentYear) {System.out.println(); System.out.println("Next Halley Comet year is "+CometYear+".");}
-    }
+        if (CometYear >= CurrentYear - 200 && CometYear < CurrentYear) {
+            System.out.print(CometYear + "; ");}
+        if (CometYear == CurrentYear) {System.out.println();
+            System.out.print("Congratulations! This year " + CurrentYear + " is Halley Comet Year!");}
+            }
+        System.out.println();
+        System.out.print("Next Halley Comet year(-s) in nearest 100 years is (are): ");
+        for (int CometYear = 0; CometYear <= CurrentYear + 100; CometYear += 79) {
+        if (CometYear > CurrentYear) {System.out.print (CometYear+";");}
+        }
     }
 }
